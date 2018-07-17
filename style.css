@@ -1,0 +1,68 @@
+*{
+    margin-left: 0;
+    padding-left: 0;
+}
+.main{
+    width: 230px;
+    height: 360px;
+    margin: auto;
+    border: solid black;
+    background-color: #252525;
+    border-radius: 9px;
+}
+.button{
+    height:50;
+    width:50;
+    font-size: 25;
+    color:white;
+    margin: 2;
+    cursor: pointer;
+    background-color: #5e615e;
+    border-radius: 9px;
+}
+.textview{
+    width: 223;
+    height: 50;
+    font-size: 25;
+    padding: 5;
+    background-color: white;
+    margin-left: 3px;
+    margin-top: 10px;
+    border-radius: 9px;
+    text-align: right;
+}
+.button:hover {
+    background-color: rgba(173, 190, 177, 0.575);
+    color: black;
+}
+#plus{
+    top: 135px;
+    height: 105px;
+    width: 50px;
+    position: absolute;
+    background-color: rgb(22, 21, 21);
+}
+#equal{
+    height: 106px;
+    width: 50px;
+    position: absolute;
+    top: 251px;
+    background-color: rgb(252, 172, 0);
+}
+
+#plus:hover{
+    background-color:  rgba(173, 190, 177, 0.575);
+    color: black;
+}
+
+#equal:hover{
+    background-color:  rgba(173, 190, 177, 0.575);
+    color: black;
+}
+#ccc{
+    background-color: rgb(22, 21, 21);
+}
+#ccc:hover{
+    background-color:  rgba(173, 190, 177, 0.575);
+    color: black;
+}

@@ -1,0 +1,51 @@
+<html>
+<head>
+    <link rel="icon" href="titleicon.png">
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="main">
+        <form name="form">
+            <table>
+                <tr>
+                    <input class="textview" type="text"  name="answer">
+                </tr>
+
+                <tr>
+                    <td><input class="button" type ="button" value="AC" onclick="form.answer.value =''" id="ccc"></td>
+                    <td><input class="button" type="button" value="/" onclick="form.answer.value += '/'" id="ccc"></td>
+                    <td><input class="button" type="button" value="*" onclick="form.answer.value += '*'" id="ccc"></td>
+                    <td><input class="button" type="button" value="-" onclick="form.answer.value += '-'" id="ccc"></td>
+                </tr>
+
+                <tr>
+                    <td><input class="button" type="button" value="7" onclick="form.answer.value += '7'"></td>
+                    <td><input class="button" type="button" value="8" onclick="form.answer.value += '8'"></td>
+                    <td><input class="button" type="button" value="9" onclick="form.answer.value += '9'"></td>
+                    <td><input class="button" type="button" value="+" onclick="form.answer.value += '+'" id="plus"></td>
+                </tr>
+
+                <tr>
+                    <td><input class="button" type="button" value="4" onclick="form.answer.value += '4'"></td>
+                    <td><input class="button" type="button" value="5" onclick="form.answer.value += '5'"></td>
+                    <td><input class="button" type="button" value="6" onclick="form.answer.value += '6'"></td>
+                </tr>
+
+                <tr>
+                    <td><input class="button" type="button" value="1" onclick="form.answer.value += '1'"></td>
+                    <td><input class="button" type="button" value="2" onclick="form.answer.value += '2'"></td>
+                    <td><input class="button" type="button" value="3" onclick="form.answer.value += '3'"></td>
+                    <td><input class="button" type="button" value="=" onclick="form.answer.value = eval (form.answer.value)" id="equal"></td>
+                </tr>
+
+                <tr>
+                    <td><input class="button" type="button" value="Del" OnClick="form.answer.value=form.answer.value.substring(0, form.answer.value.length -1)"></td>
+                    <td><input class="button" type="button" value="0" onclick="form.answer.value += '0'"></td>
+                    <td><input class="button" type="button" value="." onclick="form.answer.value += '.'"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
