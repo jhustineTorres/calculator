@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 </html>
     <head>
+        <script src="js/calcu.js"></script>
         <link rel="icon" href="icon/titleicon.png">
         <title>Calculator</title>
         <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -10,74 +11,74 @@
             <form name="form">
                 <table>
                     <tr>
-                        <input class="textview" type="text"  name="answer">
+                        <input class="textview" type="textview"  name="answer">
                     </tr>
                     <tr>
                         <td>
-                            <input class="button" type="button" value="AC" id="ccc">
+                            <input class="button" type="button" value="AC" id="ccc" onclick="clean()">
                         </td>
                         <td>
-                            <input class="button" type="button" value="/" id="ccc">
+                            <input class="button" name="buttond" type="button" value="/" id="ccc" onclick="dis(buttond.value)">
                         </td>
                         <td>
-                            <input class="button" type="button" value="*" id="ccc">
+                            <input class="button" name="buttonm" type="button" value="*" id="ccc" onclick="dis(buttonm.value)">
                         </td>
                         <td>
-                            <input class="button" type="button" value="-" id="ccc">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input class="button" type="button" value="7">
-                        </td>
-                        <td>
-                            <input class="button" type="button" value="8">
-                        </td>
-                        <td>
-                            <input class="button" type="button" value="9">
-                        </td>
-                        <td>
-                            <input class="button" type="button" value="+" id="plus">
+                            <input class="button" name="buttons" type="button" value="-" id="ccc" onclick="dis(buttons.value)">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input class="button" type="button" value="4">
+                            <input class="button" name="button7" type="button" value="7" onclick="dis(button7.value)">
                         </td>
                         <td>
-                            <input class="button" type="button" value="5">
+                            <input class="button" name="button8" type="button" value="8" onclick="dis(button8.value)">
                         </td>
                         <td>
-                            <input class="button" type="button" value="6">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input class="button" type="button" value="1">
+                            <input class="button" name="button9" type="button" value="9" onclick="dis(button9.value)">
                         </td>
                         <td>
-                            <input class="button" type="button" value="2">
-                        </td>
-                        <td>
-                            <input class="button" type="button" value="3">
-                        </td>
-                        <td>
-                            <input class="button" type="button" value="=" id="equal">
+                            <input class="button" name="buttonplus" type="button" value="+" id="plus" onclick="dis(buttonplus.value)">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input class="button" type="button" value="Del">
+                            <input class="button" name="button4" type="button" value="4" onclick="dis(button4.value)">
                         </td>
                         <td>
-                            <input class="button" type="button" value="0">
+                            <input class="button" name="button5" type="button" value="5" onclick="dis(button5.value)">
                         </td>
                         <td>
-                            <input class="button" type="button" value=".">
+                            <input class="button" name="button6" type="button" value="6" onclick="dis(button6.value)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="button" name="button1" type="button" value="1" onclick="dis(button1.value)">
+                        </td>
+                        <td>
+                            <input class="button" name="button2" type="button" value="2" onclick="dis(button2.value)">
+                        </td>
+                        <td>
+                            <input class="button" name="button3" type="button" value="3" onclick="dis(button3.value)">
+                        </td>
+                        <td>
+                            <input class="button" name="buttonequal" type="button" value="=" id="equal" onclick="answer.value=eval(answer.value)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="button" type="button" value="Del" onclick="del()">
+                        </td>
+                        <td>
+                            <input class="button" name="button0" type="button" value="0" onclick="dis(button0.value)">
+                        </td>
+                        <td>
+                            <input class="button" name="button" type="button" value="." onclick="dis(button.value)">
                         </td>
                     </tr>
                 </table>
             </form>
         </div>
     </body>
-    </html>
+</html>
