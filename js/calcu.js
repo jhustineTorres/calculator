@@ -1,28 +1,23 @@
-<<<<<<< HEAD
-function dis(x){
-    form.answer.value=form.answer.value+x;
-}
-
-//clear textbox
-function clean(){
-    form.answer.value='';
-}
-
-//dellllllllllllls
-function del(){
-    form.answer.value=form.answer.value.slice(0,form.answer.value.length-1);
-=======
-function dis(x){
-    form.answer.value=form.answer.value+x;
-}
-
-//clear textbox
-function clean(){
-    form.answer.value='';
-}
-
-//dellllllllllllls
-function del(){
-    form.answer.value=form.answer.value.slice(0,form.answer.value.length-1);
->>>>>>> 0d47170a26044f8c02e3ce44ec5df932b246de93
+var keys = document.querySelectorAll("button");
+for(var i=0; i<keys.length; i++){
+    keys[i].onclick = function (e){
+        var input = document.querySelector(".display");
+        var inputValue = input.innerHTML;
+        var btnValue = this.innerHTML;
+        if(btnValue == "="){
+            var mathCal = inputValue;
+            if(mathCal){
+                input.innerHTML = eval(mathCal);
+            }
+        }
+        else if(btnValue == "Del"){
+           input.innerHTML=input.innerHTML.slice(0,input.innerHTML.length-1);
+        }
+        else if(btnValue == "AC"){
+            input.innerHTML = "";
+        }
+        else{
+            input.innerHTML += btnValue;
+        }
+    }
 }

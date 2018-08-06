@@ -1,170 +1,38 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
-</html>
+<html>
     <head>
-        <script src="js/calcu.js"></script>
         <link rel="icon" href="icon/titleicon.png">
         <title>Calculator</title>
         <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <div class="main">
-            <form name="form">
-                <table>
-                    <tr>
-                        <input class="textview" type="textview"  name="answer">
-                    </tr>
-                    <tr>
-                        <td>
-                            <input class="button" type="button" value="AC" id="ccc" onclick="clean()">
-                        </td>
-                        <td>
-                            <input class="button" name="buttond" type="button" value="/" id="ccc" onclick="dis(buttond.value)">
-                        </td>
-                        <td>
-                            <input class="button" name="buttonm" type="button" value="*" id="ccc" onclick="dis(buttonm.value)">
-                        </td>
-                        <td>
-                            <input class="button" name="buttons" type="button" value="-" id="ccc" onclick="dis(buttons.value)">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input class="button" name="button7" type="button" value="7" onclick="dis(button7.value)">
-                        </td>
-                        <td>
-                            <input class="button" name="button8" type="button" value="8" onclick="dis(button8.value)">
-                        </td>
-                        <td>
-                            <input class="button" name="button9" type="button" value="9" onclick="dis(button9.value)">
-                        </td>
-                        <td>
-                            <input class="button" name="buttonplus" type="button" value="+" id="plus" onclick="dis(buttonplus.value)">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input class="button" name="button4" type="button" value="4" onclick="dis(button4.value)">
-                        </td>
-                        <td>
-                            <input class="button" name="button5" type="button" value="5" onclick="dis(button5.value)">
-                        </td>
-                        <td>
-                            <input class="button" name="button6" type="button" value="6" onclick="dis(button6.value)">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input class="button" name="button1" type="button" value="1" onclick="dis(button1.value)">
-                        </td>
-                        <td>
-                            <input class="button" name="button2" type="button" value="2" onclick="dis(button2.value)">
-                        </td>
-                        <td>
-                            <input class="button" name="button3" type="button" value="3" onclick="dis(button3.value)">
-                        </td>
-                        <td>
-                            <input class="button" name="buttonequal" type="button" value="=" id="equal" onclick="answer.value=eval(answer.value)">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input class="button" type="button" value="Del" onclick="del()">
-                        </td>
-                        <td>
-                            <input class="button" name="button0" type="button" value="0" onclick="dis(button0.value)">
-                        </td>
-                        <td>
-                            <input class="button" name="button" type="button" value="." onclick="dis(button.value)">
-                        </td>
-                    </tr>
-                </table>
-            </form>
+        <div id="calculator">
+            <div class="display"></div>
+            <div class="keys">
+                <button>AC</button>
+                <button>/</button>
+                <button>*</button>
+                <button>-</button>
+                <br>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button id="plus">+</button>
+                <br>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <br>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button id="equal">=</button>
+                <br>
+                <button>Del</button>
+                <button>0</button>
+                <button>.</button>
+            </div>
         </div>
-    </body>
-=======
-<!DOCTYPE html>
-</html>
-    <head>
         <script src="js/calcu.js"></script>
-        <link rel="icon" href="icon/titleicon.png">
-        <title>Calculator</title>
-        <link href="css/style.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <div class="main">
-            <form name="form">
-                <table>
-                    <tr>
-                        <input class="textview" type="textview"  name="answer">
-                    </tr>
-                    <tr>
-                        <td>
-                            <input class="button" type="button" value="AC" id="ccc" onclick="clean()">
-                        </td>
-                        <td>
-                            <input class="button" name="buttond" type="button" value="/" id="ccc" onclick="dis(buttond.value)">
-                        </td>
-                        <td>
-                            <input class="button" name="buttonm" type="button" value="*" id="ccc" onclick="dis(buttonm.value)">
-                        </td>
-                        <td>
-                            <input class="button" name="buttons" type="button" value="-" id="ccc" onclick="dis(buttons.value)">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input class="button" name="button7" type="button" value="7" onclick="dis(button7.value)">
-                        </td>
-                        <td>
-                            <input class="button" name="button8" type="button" value="8" onclick="dis(button8.value)">
-                        </td>
-                        <td>
-                            <input class="button" name="button9" type="button" value="9" onclick="dis(button9.value)">
-                        </td>
-                        <td>
-                            <input class="button" name="buttonplus" type="button" value="+" id="plus" onclick="dis(buttonplus.value)">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input class="button" name="button4" type="button" value="4" onclick="dis(button4.value)">
-                        </td>
-                        <td>
-                            <input class="button" name="button5" type="button" value="5" onclick="dis(button5.value)">
-                        </td>
-                        <td>
-                            <input class="button" name="button6" type="button" value="6" onclick="dis(button6.value)">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input class="button" name="button1" type="button" value="1" onclick="dis(button1.value)">
-                        </td>
-                        <td>
-                            <input class="button" name="button2" type="button" value="2" onclick="dis(button2.value)">
-                        </td>
-                        <td>
-                            <input class="button" name="button3" type="button" value="3" onclick="dis(button3.value)">
-                        </td>
-                        <td>
-                            <input class="button" name="buttonequal" type="button" value="=" id="equal" onclick="answer.value=eval(answer.value)">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input class="button" type="button" value="Del" onclick="del()">
-                        </td>
-                        <td>
-                            <input class="button" name="button0" type="button" value="0" onclick="dis(button0.value)">
-                        </td>
-                        <td>
-                            <input class="button" name="button" type="button" value="." onclick="dis(button.value)">
-                        </td>
-                    </tr>
-                </table>
-            </form>
-        </div>
     </body>
->>>>>>> 0d47170a26044f8c02e3ce44ec5df932b246de93
 </html>
